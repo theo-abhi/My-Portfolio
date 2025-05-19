@@ -236,7 +236,7 @@ img {
 
 /* Scrollbar */
 .row.overflow-auto {
-  overflow-x: auto;
+  overflow-x: scroll;
   flex-wrap: nowrap;
   cursor: grab;
 
