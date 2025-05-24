@@ -8,8 +8,619 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/aos.css" />
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
+    <link rel="stylesheet" href="./assets/css/style.css" /></head
+  ><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Link Swiper's CSS -->
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
+
+      <!-- Fontawesome CDN Link -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+      <link rel="stylesheet" href="./css/styles.css" />
+      <link rel="stylesheet" href="./css/mediaqueries.css" />
+
+      <title>My Portfolio</title>
+    </head>
+    <body>
+      <!-- NAV SECTION -->
+      <nav id="desktop-nav">
+        <div class="logo">Abhishek Negi</div>
+        <div class="desktop-menu">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#wordpress-projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Abhishek Negi</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li>
+              <a href="#wordpress-projects" onclick="toggleMenu()">Projects</a>
+            </li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+      <!-- //NAV SECTION -->
+
+      <!-- PROFILE SECTION -->
+      <section id="profile">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.jpg"
+            alt="Abhishek Negi profile picture"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 class="title">Abhishek Negi</h1>
+          <p class="section__text__p2">Frontend Developer</p>
+          <div class="btn-container">
+            <!-- <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >Download CV</button>  -->
+            <button
+              class="btn btn-color-2"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/abhishek-negi-064521364/"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://github.com/theo-abhi">
+              <i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <!-- //PROFILE SECTION -->
+      <!-- <hr class="rounded" /> -->
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>Fitness Trainer <br />Wordpress Developer</p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.Tech. <br />Mechanical Engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="text-container">
+              <h2>From Reps to Repositories:</h2>
+              <h4>My Journey into Full-Stack Development</h4>
+              <br />
+              <p>
+                With years dedicated to empowering clients as a fitness trainer,
+                I've honed my skills in strategic planning, problem-solving, and
+                achieving measurable results. I'm now channeling that same
+                discipline and passion into learning full-stack web development,
+                building robust applications from backend logic to captivating
+                frontend design. My journey is about transforming dedication
+                into dynamic digital solutions.
+              </p>
+            </div>
+          </div>
+          <div class="section__pic-container">
+            <img
+              src="./assets/software.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- //ABOUT SECTION -->
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Frontend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/skills/HTML5.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/CSS3.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/Bootstrap.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Bootstrap</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/Tailwind CSS.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Tailwind</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/JavaScript.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/React.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>React</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/skills/TypeScript.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>TypeScript</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/Node.js.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Node JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/Express.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Express JS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/NPM.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>npm</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/Git.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Git</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/skills/Nest.js.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>NestJS</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //EXPERIENCE SECTION -->
+      <!-- WORDPRESS PROJECTS -->
+      <section id="wordpress-projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Wordpress Projects</h1>
+        <div class="swiper mySwiper container">
+          <div class="swiper-wrapper content">
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./assets/project-1.png" alt="" />
+                </div>
+                <div class="name-profession">
+                  <span class="name">Teach Ladakh</span>
+                  <span class="profession">Learning Management System</span>
+                </div>
+                <a
+                  class="button"
+                  href="https://teachladakh.com/"
+                  target="_blank"
+                >
+                  <button
+                    class="btn btn-color-2"
+                    onclick="location.href='./#contact'"
+                  >
+                    Website
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./assets/project-2.png" alt="" />
+                </div>
+                <div class="name-profession">
+                  <span class="name">Teach Ladakh</span>
+                  <span class="profession">Learning Managment System</span>
+                </div>
+                <a
+                  class="button"
+                  href="https://teachladakh.com/"
+                  target="_blank"
+                >
+                  <button
+                    class="btn btn-color-2"
+                    onclick="location.href='./#contact'"
+                  >
+                    Website
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./assets/project-3.png" alt="" />
+                </div>
+                <div class="name-profession">
+                  <span class="name">Teach Ladakh</span>
+                  <span class="profession">Learning Managment System</span>
+                </div>
+                <a
+                  class="button"
+                  href="https://teachladakh.com/"
+                  target="_blank"
+                >
+                  <button
+                    class="btn btn-color-2"
+                    onclick="location.href='./#contact'"
+                  >
+                    Website
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./assets/project-1.png" alt="" />
+                </div>
+                <div class="name-profession">
+                  <span class="name">Teach Ladakh</span>
+                  <span class="profession">Learning Managment System</span>
+                </div>
+                <a
+                  class="button"
+                  href="https://teachladakh.com/"
+                  target="_blank"
+                >
+                  <button
+                    class="btn btn-color-2"
+                    onclick="location.href='./#contact'"
+                  >
+                    Website
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide card">
+              <div class="card-content">
+                <div class="image">
+                  <img src="./assets/project-2.png" alt="" />
+                </div>
+                <div class="name-profession">
+                  <span class="name">Teach Ladakh</span>
+                  <span class="profession">Learning Managment System</span>
+                </div>
+                <a
+                  class="button"
+                  href="https://teachladakh.com/"
+                  target="_blank"
+                >
+                  <button
+                    class="btn btn-color-2"
+                    onclick="location.href='./#contact'"
+                  >
+                    Website
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- //WORDPRESS PROJECTS -->
+      <!-- GIT-PROJECTS SECTION -->
+      <section id="github-projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">GitHub Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/github/calculator-app.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Calculator App</h2>
+              <div class="git-div">
+                <div class="languages">
+                  <span>Languages</span>
+                  <div class="bar-container">
+                    <div class="git-project-1-js"></div>
+                    <div class="git-project-1-css"></div>
+                    <div class="git-project-1-html"></div>
+                  </div>
+                  <div class="legend">
+                    <div class="legend-item">
+                      <span class="dot js"></span
+                      ><span class="bold">JavaScript</span> 37.7%
+                    </div>
+                    <div class="legend-item">
+                      <span class="dot css"></span
+                      ><span class="bold">CSS</span> 32.6%
+                    </div>
+                    <div class="legend-item">
+                      <span class="dot html"></span
+                      ><span class="bold">HTML</span> 29.7%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('https://github.com/theo-abhi/Basic-Calculator-HTML-CSS-JS', '_blank');"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('https://theo-abhi.github.io/Basic-Calculator-HTML-CSS-JS/', '_blank');"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/github/quiz-app.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Quiz App</h2>
+              <div class="git-div">
+                <div class="languages">
+                  <span>Languages</span>
+                  <div class="bar-container">
+                    <div class="git-project-2-js"></div>
+                    <div class="git-project-2-css"></div>
+                    <div class="git-project-2-html"></div>
+                  </div>
+                  <div class="legend">
+                    <div class="legend-item">
+                      <span class="dot js"></span
+                      ><span class="bold">JavaScript</span> 43.8%
+                    </div>
+                    <div class="legend-item">
+                      <span class="dot css"></span
+                      ><span class="bold">CSS</span> 35.9%
+                    </div>
+                    <div class="legend-item">
+                      <span class="dot html"></span
+                      ><span class="bold">HTML</span> 20.3%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('https://github.com/theo-abhi/Basic-Quiz-App-HTML-CSS-JS', '_blank');"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2"
+                  onclick="window.open('https://theo-abhi.github.io/Basic-Quiz-App-HTML-CSS-JS/', '_blank');"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+
+            <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- //GIT-PROJECTS SECTION -->
+      <!-- CONTACT SECTION -->
+      <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <a target="_blank" href="mailto:theo.abhi2793@gmail.com">
+              <i class="fa-solid fa-envelope"></i
+            ></a>
+            <p>
+              <a target="_blank" href="mailto:theo.abhi2793@gmail.com"
+                >theo.abhi2793@gmail.com</a
+              >
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/abhishek-negi-064521364/"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
+            <p>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/abhishek-negi-064521364/"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- //CONTACT SECTION -->
+      <!-- FOOTER SECTION -->
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2025 Abhishek Negi. All Rights Reserved.</p>
+      </footer>
+      <!-- //FOOTER SECTION -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="./js/script.js"></script>
+    </body>
+  </html>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- NAVBAR -->
